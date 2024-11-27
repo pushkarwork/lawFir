@@ -1,0 +1,312 @@
+:root {
+    --golden: #b68c5a;
+    --blue: #023a5bab;
+    --lightBlack: rgba(0, 0, 0, 0.676);
+}
+
+.quest-main {
+    width: 100%;
+    margin: auto;
+    z-index: 1;
+    margin-top: 2vh;
+    height: 130vh;
+    background-image: url("/images/court.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    background-origin: content-box;
+    display: flex;
+    align-items: center;
+    padding-bottom: 3vh;
+    margin-bottom: 5vh;
+}
+
+.quest-main::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    background-color: #023a5bab;
+    z-index: 2;
+}
+
+.quest-left {
+    /* border: 2px solid white; */
+    width: 50%;
+    position: relative;
+    z-index: 5;
+    color: white;
+    padding: 2vh 1vw 2vh 2vw;
+}
+
+.quest-left h6 {
+    font-size: 1.5rem;
+}
+
+.quest-left h6 span {
+    margin-right: 1vw;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.quest-left h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.quest-left h1 span {
+    color: var(--golden);
+    display: block;
+}
+
+.quest-left p {
+    color: rgba(255, 255, 255, 0.932);
+}
+
+.quest-left button {
+    border: none;
+    background-color: var(--golden);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.quest-left button:hover {
+    background-color: white;
+    color: var(--golden);
+}
+
+.quest-right {
+    /* border: 1px solid red; */
+    width: 50%;
+    position: relative;
+    z-index: 5;
+
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: end;
+}
+
+.quest-right img {
+    width: 78%;
+    height: 65%;
+    position: relative;
+    bottom: 15%;
+}
+
+.text-div-right {
+    background-color: white;
+    position: absolute;
+    border-radius: 0.5rem;
+    right: 9%;
+    width: 75%;
+    padding: 5vh;
+    background-color: var(--golden);
+    color: white;
+    font-weight: 400;
+    bottom: 2%;
+    display: flex;
+    gap: 3%;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.blankCoverDiv {
+    width: 4px;
+    background-color: white;
+    color: whitesmoke;
+    /* border: 1px solid black; */
+}
+
+@media(max-width:991px) {
+    .quest-main {
+        width: 100%;
+        margin: auto;
+        z-index: 1;
+        margin-top: 2vh;
+        height: 130vh;
+        background-image: url("/images/court.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        background-attachment: fixed;
+        background-origin: content-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 3vh;
+        margin-bottom: 5vh;
+    }
+
+
+    .quest-left {
+        /* border: 2px solid white; */
+        width: 95%;
+        margin-top: 11vh;
+        position: relative;
+        z-index: 5;
+        text-align: center;
+        align-items: center;
+        color: white;
+        padding: 2vh 1vw 3vh 1vw;
+    }
+
+    .quest-left h6,
+    .quest-left h1,
+    .quest-left p {
+        margin-bottom: 3vh;
+    }
+
+    .quest-right {
+        width: 60%;
+        /* border: 1px solid white; */
+        position: relative;
+        z-index: 5;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        bottom: -5%;
+    }
+
+    .quest-right img {
+        width: 78%;
+        height: 85%;
+        position: relative;
+        bottom: 15%;
+    }
+
+    .text-div-right {
+        background-color: white;
+        position: absolute;
+        border-radius: 0.5rem;
+        /* right: 9%; */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 5vh;
+        background-color: var(--golden);
+        color: white;
+        font-weight: 400;
+        bottom: -10%;
+        display: flex;
+        gap: 3%;
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
+}
+
+@media(max-width:650px) {
+    .quest-right {
+        width: 90%;
+        /* border: 1px solid white; */
+        position: relative;
+        z-index: 5;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        bottom: -5%;
+    }
+
+    .quest-right img {
+        width: 75%;
+        height: 85%;
+        position: relative;
+        bottom: 18%;
+    }
+
+
+
+    .text-div-right {
+        /* background-color: white; */
+        position: absolute;
+        border-radius: 0.5rem;
+        /* right: 9%; */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 5vh;
+        background-color: var(--golden);
+        color: white;
+        font-weight: 400;
+        bottom: -15%;
+        display: flex;
+        gap: 3%;
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+}
+
+@media(max-width:500px) {
+    .quest-right {
+        width: 95%;
+        /* border: 1px solid white; */
+        position: relative;
+        z-index: 5;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        bottom: -5%;
+    }
+
+    .quest-right img {
+        width: 85%;
+        height: 85%;
+        position: relative;
+        bottom: 18%;
+    }
+
+    .text-div-right {
+        /* background-color: white; */
+        position: absolute;
+        border-radius: 0.5rem;
+        /* right: 9%; */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 5vh;
+        background-color: var(--golden);
+        color: white;
+        font-weight: 400;
+        bottom: -30%;
+        display: flex;
+        gap: 3%;
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
+    .quest-main {
+        width: 100%;
+        margin: auto;
+        z-index: 1;
+        margin-top: 2vh;
+        height: 130vh;
+        background-image: url("/images/court.jpg");
+        background-position: center;
+        background-size:contain;
+        background-repeat: repeat;
+        position: relative;
+        background-attachment: fixed;
+        background-origin: content-box;
+        display: flex;
+        align-items: center;
+        padding-bottom: 3vh;
+        margin-bottom: 5vh;
+    }
+
+
+}

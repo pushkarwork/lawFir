@@ -1,0 +1,508 @@
+:root {
+    --golden: #b68c5a;
+    --blue: #023a5bab;
+    --lightBlack: rgba(0, 0, 0, 0.676);
+    --navyBlue: #023A5B
+}
+
+.about-main {
+    /* border: 5px dashed darksalmon; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    margin-top: 40vh;
+    /* height: 110vh; */
+    padding-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.039);
+
+}
+
+.aboutMainAdjust {
+    /* border: 5px dashed darksalmon; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    margin-top: 10vh;
+    /* height: 110vh; */
+    padding-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.039);
+}
+
+.imgBoxFirst {
+    /* background-color: rgba(0, 0, 0, 0.909); */
+    /* border: 5px dotted red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgBoxFirst>img {
+    width: 50%;
+    box-shadow: -20px -20px var(--golden);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+}
+
+.knowDiv {
+    /* border: 1px solid red; */
+    color: wheat;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 15%;
+    align-items: center;
+
+}
+
+.knowDiv>p {
+    /* border: 1px solid white; */
+    /* margin-bottom: 0; */
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--navyBlue);
+}
+
+.playIcons {
+    text-decoration: none;
+}
+
+.ri-play-circle-line {
+    font-size: 3.5rem;
+    color: white;
+    padding: 12px;
+    font-weight: lighter;
+    background-color: var(--golden);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    /* To clip any glow outside the circular shape */
+    /* box-shadow: 0 0 10px white, 0 0 12px #b68d5a, 0 0 15px white; */
+    /* Initial soft glow */
+    animation: glowing 1.5s ease-in infinite;
+    /* Animation for pulsating glow */
+}
+
+/* Keyframes for the growing circular glowing effect */
+@keyframes glowing {
+    0% {
+        /* Initial state */
+        box-shadow:
+            0 0 10px #493824,
+            0 0 11px #b68d5a,
+            0 0 12px #493824;
+    }
+
+    25% {
+        /* The white glow starts to grow outward */
+        box-shadow:
+            0 0 20px #000000,
+            0 0 21px #b68d5a,
+            0 0 22px #000000;
+    }
+
+    50% {
+        /* The white glow grows, and the golden circle is now expanded too */
+        box-shadow:
+            0 0 23px #000000,
+            0 0 24px #b68d5a,
+            0 0 24.5px #000000;
+    }
+
+    75% {
+        /* The rings expand even further */
+        box-shadow:
+            0 0 20px #000000,
+            0 0 21px #b68d5a,
+            0 0 22px #0000005b;
+    }
+
+    100% {
+        /* The final state: same as the start but with larger glowing rings */
+        box-shadow:
+            0 0 10px #493824,
+            0 0 11px #b68d5a,
+            0 0 12px #493824;
+    }
+}
+
+
+
+.imgBoxRight {
+    /* background-color: rgba(255, 0, 0, 0.717); */
+    display: flex;
+    /* width: 70%; */
+    height: 30vh !important;
+
+    position: relative;
+    /* margin-left: 5vw; */
+}
+
+.imgBoxRight>p {
+    position: absolute;
+    left: 10%;
+    color: var(--blue);
+    top: 11%;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.imgBoxRight>p>span {
+    color: var(--golden);
+    font-size: 2rem;
+}
+
+.ExpDiv {
+    background-color: rgba(11, 58, 105, 0.979);
+    color: white;
+    border-radius: 0.8rem;
+    width: 50%;
+    padding: 6%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    position: absolute;
+}
+
+#num {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#num2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#clr {
+    width: 5px;
+    height: 55px;
+    display: block;
+    color: var(--golden);
+    background-color: var(--golden);
+}
+
+.spanDiv {
+    display: flex;
+    gap: 5%;
+}
+
+.ri-medal-fill {
+    position: absolute;
+    top: -15%;
+    font-size: 5rem;
+    /* fill: var(--golden); */
+    color: var(--golden);
+    border-radius: 50%;
+
+    width: 5.5rem;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.5rem;
+    background-color: white;
+}
+
+@media(max-width:991px) {
+
+    .about-main {
+        /* border: 5px dashed darksalmon; */
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin-top: 40vh !important;
+
+    }
+
+    .aboutMainAdjust {
+        margin-top: 10vh !important;
+    }
+
+    .imgBoxRight {
+        /* background-color: rgba(255, 0, 0, 0.717); */
+        display: flex;
+        /* width: 70%; */
+        height: 50vh;
+
+        position: relative;
+        /* margin-left: 5vw; */
+    }
+
+    .ExpDiv {
+        /* background-color: rgba(11, 58, 105, 0.979); */
+        color: white;
+        border-radius: 0.8rem;
+        width: 50%;
+        padding: 6%;
+        left: 50%;
+        transform: translate(-10%, -50%);
+        position: absolute;
+    }
+
+
+}
+
+@media (max-width:599px) {
+    .about-main {
+        /* border: 5px dashed darksalmon; */
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: 70vh !important;
+
+    }
+
+    .aboutMainAdjust {
+        margin-top: 10vh !important;
+    }
+
+
+
+    .imgBoxRight {
+        /* background-color: rgba(255, 0, 0, 0.717); */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* width: 70%; */
+        flex-direction: column-reverse;
+        height: 50vh !important;
+        top: 10%;
+        position: relative;
+        /* margin-left: 5vw; */
+    }
+
+    .imgBoxRight>p {
+        position: absolute;
+
+        color: var(--blue);
+        top: 57%;
+
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    .imgBoxRight>p>span {
+        color: var(--golden);
+        font-size: 2rem;
+    }
+
+    .about-left {
+        /* background-color: aqua; */
+    }
+
+    .imgBoxFirst {
+        /* background-color: rgba(0, 0, 0, 0.909); */
+        /* border: 5px dotted red; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .imgBoxFirst>img {
+        width: 80%;
+        box-shadow: -20px -20px var(--golden);
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+
+    }
+
+    .knowDiv {
+        /* border: 1px solid red; */
+        color: wheat;
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0%;
+        margin-top: 1%;
+        /* width: 100%; */
+        margin-bottom: 3%;
+        align-items: center;
+
+    }
+
+    .knowDiv>p {
+        /* border: 1px solid white; */
+        /* margin-bottom: 0; */
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: var(--blue);
+    }
+
+
+    .ExpDiv {
+        /* background-color: rgba(11, 58, 105, 0.979); */
+        color: white;
+        border-radius: 0.8rem;
+        width: 80%;
+        padding: 6%;
+        display: flex;
+        padding-top: 8%;
+        flex-direction: column;
+        align-items: center;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        /* position: relative; */
+    }
+
+    .ri-medal-fill {
+        position: absolute;
+        top: -15%;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 5rem;
+        /* fill: var(--golden); */
+        color: var(--golden);
+        border-radius: 50%;
+        width: 5.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5.5rem;
+        background-color: white;
+    }
+
+    .spanDiv {
+        display: flex;
+        gap: 5%;
+        margin-top: 2%;
+    }
+
+}
+
+
+
+.about-right h6 {
+    color: var(--navyBlue);
+    /* border: 2px solid black; */
+    height: 6%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.about-right h1 {
+    font-weight: 700;
+    width: 75%;
+    /* font-size: larger; */
+}
+
+.about-right h1 span {
+    color: var(--golden);
+}
+
+.about-right p {
+    color: var(--lightBlack);
+    font-weight: 400;
+    /* font-size: rem; */
+}
+
+.sign-div {
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+.sign-div img {
+    width: 60% !important;
+}
+
+.sign-div-right {
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+}
+
+.sign-div-right ul {
+
+    /* border: 1px solid rgb(29, 25, 14); */
+    list-style: none;
+    width: 100%;
+}
+
+.list-item {
+    /* background-color: beige; */
+    /* margin-bottom: 1rem; */
+    margin: 0.5rem 0;
+    display: flex;
+    color: var(--lightBlack);
+    gap: 5%;
+}
+
+.ri-auction-line {
+    color: var(--golden);
+}
+
+.about-right button {
+    background-color: var(--golden);
+    color: white;
+    padding: 2% 3%;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.1s ease;
+}
+
+.about-right button:hover {
+    background-color: white;
+    color: var(--golden);
+    outline: 1px solid var(--golden);
+    font-weight: 500;
+}
+
+#clr-rght {
+    background-color: var(--golden);
+    color: var(--golden);
+    height: 30px;
+    width: 3px;
+
+}
+
+@media (max-width:991px) {
+
+    .about-main {
+        /* border: 5px dashed darksalmon; */
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin-top: 70vh;
+        /* height: fit-content; */
+
+
+    }
+
+    .about-left {
+        /* border: 1px solid black; */
+        /* padding-bottom: 2vh; */
+        /* margin-bottom: 1vh; */
+
+    }
+
+    .about-right {
+        /* margin-top: 5vh; */
+        /* background-color: aqua; */
+        padding-bottom: 2vh;
+    }
+
+    .about-right h1 {
+        font-weight: 900;
+        width: 98%;
+        margin-bottom: 2vh;
+    }
+
+    .sign-div {
+        /* border: 2px solid green; */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5%;
+    }
+}

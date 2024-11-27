@@ -1,0 +1,140 @@
+:root {
+    --golden: #b68c5a;
+    --blue: #023a5bab;
+    --lightBlack: rgba(0, 0, 0, 0.676);
+}
+
+.services-main {
+    background: linear-gradient(to right, rgba(238, 236, 233, 0.621), rgba(238, 236, 233, 0.132), rgba(238, 236, 233, 0.064));
+
+
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.services-main h6 {
+    color: var(--golden);
+    font-size: 1.5rem;
+
+}
+
+.services-main h1 {
+    font-weight: 500;
+}
+
+.services-main h1 span {
+    color: var(--golden);
+}
+
+.services-main p {
+    color: var(--lightBlack);
+    width: 57%;
+    padding-top: 1vh;
+    margin: auto;
+}
+
+.cards-practice {
+    /* border: 3px dotted dodgerblue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    margin-bottom: 5vh;
+    margin-top: 5VH;
+    row-gap: 5%;
+}
+
+.card {
+    border-radius: 1rem;
+    display: flex;
+    padding: 3vh 0;
+    gap: 3vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(238, 236, 233, 0.251);
+    transition: all 0.3s ease-in-out;
+    border: 1.5px dashed #b68d5a52;
+}
+
+.card:hover {
+    background-color: white;
+    cursor: pointer;
+    border: 1.5px dashed var(--golden);
+}
+
+.card h3 {
+    color: var(--blue);
+    margin-bottom: 0;
+}
+
+.card p {
+    color: var(--lightBlack);
+    /* border: 1px solid black; */
+    width: 90%;
+}
+
+.icon {
+    color: var(--golden);
+    /* border: 1.3px dashed var(--lightBlack); */
+    width: fit-content;
+    font-size: 3rem;
+    padding: 0px 15px;
+    transition: all 0.3s ease-in-out;
+    border: 1.5px dashed #b68d5a52;
+    border-radius: 1rem;
+}
+
+.card:hover .icon {
+    border: 1.5px dashed var(--golden);
+}
+
+.services-main button {
+    background-color: var(--golden);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1%;
+    margin: 5vh 0;
+    transition: all 0.1s ease;
+}
+
+.services-main button:hover {
+    background-color: white;
+    color: var(--golden);
+    outline: 1px solid var(--golden);
+    font-weight: 500;
+}
+
+@media (max-width:750px) {
+    .cards-practice {
+        /* border: 3px dotted dodgerblue; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+        margin-bottom: 10vh;
+        margin-top: 5vh;
+        row-gap: 5%;
+    }
+
+}
+
+
+@media(max-width:599px) {
+    .cards-practice {
+        /* border: 3px dotted dodgerblue; */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2%;
+        margin-bottom: 20vh;
+        margin-top: 5vh;
+        row-gap: 1%;
+    }
+
+    .services-main p {
+        color: var(--lightBlack);
+        width: 90%;
+        padding-top: 1vh;
+        margin: auto;
+    }
+}

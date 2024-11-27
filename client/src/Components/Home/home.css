@@ -1,0 +1,240 @@
+:root {
+    --golden: #b68c5a;
+    --blue: #023a5bab;
+    --lightBlack: rgba(0, 0, 0, 0.676);
+}
+
+
+.mainContainer {
+    background: url('/images/lawyer.jpg') no-repeat center /cover;
+    overflow: hidden;
+    width: 100%;
+    height: 130vh;
+    z-index: 0;
+    position: relative;
+    display: flex;
+    /* flex-direction: ; */
+    justify-content: center;
+    padding-bottom: 85vh;
+
+}
+
+.mainContainer::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    background-color: #023a5bab;
+    z-index: 1;
+}
+
+.MainContainer_Text {
+    color: white;
+    z-index: 3;
+    position: absolute;
+    padding-left: 1vw;
+    top: 30vh;
+    display: flex;
+    /* justify-content: end; */
+    gap: 5vh;
+    /* text-align: center; */
+    /* background-color: rgba(255, 0, 0, 0.546); */
+    width: 80vw;
+    flex-direction: column;
+    height: 80%;
+}
+
+.MainContainer_heading {
+    font-size: 22px;
+    color: #B68C5A;
+    font-weight: bold;
+}
+
+.MainContainer_MainHeading {
+    font-size: 48px;
+    font-weight: bold;
+    width: 52%;
+    /* word-spacing: 2vh; */
+}
+
+.MainContainer_smalltext {
+    color: white;
+    font-size: 20px;
+    width: 60%;
+}
+
+.btn {
+    border-radius: 5px;
+    color: white;
+    background-color: #B68C5A;
+    margin-right: 3vh;
+    border: 2px solid #B68C5A;
+}
+
+.btn:hover {
+    color: var(--golden);
+    background-color: white;
+    outline: 1px  solid var(--golden);
+    font-weight: 500;
+}
+
+#btnSecond {
+    background-color: transparent;
+    text-transform: capitalize;
+    border: 2px solid white;
+}
+
+#btnSecond:hover {
+    color: var(--golden);
+    background-color: white;
+    outline: 1px  solid var(--golden);
+    font-weight: 500;
+}
+
+.material-symbols-outlined {
+    display: flex;
+    font-size: 47px;
+    justify-content: center;
+    align-items: center;
+    /* color: black; */
+    padding: 0 2vh;
+    font-weight: bold;
+}
+.material-symbols-outlined.homeIcons{
+    font-size: 2.5rem !important;
+    font-weight: 100 !important;
+    margin-bottom: 2px;
+}
+.IconBox {
+    /* background-color: #B68C5A; */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0.5s;
+    padding: 2.1vw;
+}
+.IconBox p{
+    /* border: 1px solid white; */
+    margin-top: 10px;
+    /* width: 100% !important; */
+    text-align: center;
+}
+.IconBoxContainer {
+    background-color: #023A5B;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    position: absolute;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.IconBox:hover {
+    background-color: #02263b;
+    cursor: pointer;
+}
+
+.IconBox h4 {
+    font-weight: 500;
+
+}
+
+#secondBox {
+    background-color: #02263b;
+}
+
+#secondBox:hover {
+    background-color: #023A5B;
+}
+
+@media (max-width:991px) {
+    .mainContainer {
+        background: url('/images/lawyer.jpg') no-repeat center /cover;
+        overflow: hidden;
+        width: 100%;
+        height: 110vh;
+        z-index: 0;
+        position: relative;
+        display: flex;
+        /* flex-direction: ; */
+        justify-content: center;
+        padding-bottom: 85vh;
+
+    }
+
+    .MainContainer_Text {
+        color: white;
+        z-index: 3;
+        position: absolute;
+        padding-left: 0.5vw;
+        top: 30vh;
+        display: flex;
+        /* justify-content: end; */
+        gap: 5vh;
+        /* text-align: center; */
+        /* background-color: rgba(255, 0, 0, 0.546); */
+        width: 95vw;
+        flex-direction: column;
+        height: 70%;
+    }
+
+    .MainContainer_MainHeading {
+        font-size: 48px;
+        font-weight: bold;
+        width: 98%;
+        /* word-spacing: 2vh; */
+    }
+
+    .MainContainer_smalltext {
+        color: white;
+        font-size: 20px;
+        width: 99%;
+    }
+
+    .IconBoxContainer {
+        background-color: #023A5B;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        position: absolute;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .IconBoxContainer .IconBox:nth-child(3) {
+        grid-column: 1/-1;
+        /* border: 1px solid white; */
+    }
+}
+
+@media(max-width:599px) {
+    .mainContainer {
+        background: url('/images/lawyer.jpg') no-repeat center /cover;
+        overflow: hidden;
+        width: 100%;
+        height: 110vh;
+        z-index: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 85vh;
+
+    }
+
+    .IconBoxContainer {
+        background-color: #023A5B;
+        width: 92%;
+        left: 50%;
+        transform: translate(-50%, -15%);
+        position: absolute;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

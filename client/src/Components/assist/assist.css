@@ -1,0 +1,107 @@
+:root {
+    --golden: #b68c5a;
+    --blue: #023a5bab;
+    --lightBlack: rgba(0, 0, 0, 0.676);
+}
+
+
+.assist_main {
+    /* border: 1px solid red; */
+    background: url("/images/backgroud.webp") fixed center / cover;
+    height: 85vh;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15vh;
+}
+
+.assist_main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    left: 0;
+    background-color: #023a5bab;
+}
+
+.assist_inside {
+    /* border: 1px solid white; */
+    width: 55%;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.assist_inside h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+.assist_inside h1 span {
+    color: var(--golden);
+}
+
+.assist_inside p {
+    /* border: 1px solid red; */
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin: 3vh 0 !important;
+}
+
+.assist_inside button {
+    border: none;
+    background-color: var(--golden);
+    color: white;
+    /* padding: 3%; */
+    border-radius: 5px;
+    width: 130%;
+    position: relative;
+    left: -15%;
+    padding: 7% 4% !important;
+    font-weight: 500;
+    transition: all 0.1s ease-in;
+}
+
+.assist_inside button:hover {
+    outline: 1px solid var(--golden);
+    font-weight: 500;
+    color: var(--golden);
+    background-color: white;
+}
+
+@media(max-width:991px) {
+    .assist_inside {
+        /* border: 1px solid white; */
+        width: 95%;
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+}
+
+
+@media(max-width:576px) {
+    .assist_inside p {
+        /* border: 1px solid red; */
+        text-align: center;
+        width: 99%;
+        margin: auto;
+        margin: 3vh 0 !important;
+    }
+
+}

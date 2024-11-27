@@ -1,0 +1,83 @@
+:root {
+    --golden: #b68c5a;
+    --blue: #023a5bab;
+    --lightBlack: rgba(0, 0, 0, 0.676);
+    --imageOver: #023a5bab;
+}
+
+
+
+
+.About_main_page {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    height: 80vh;
+    background: url("/images/aboutBack.jpg") fixed no-repeat center / cover;
+}
+
+.About_main_page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+   
+    height: 100%;
+    left: 0;
+    background-color: var(--imageOver);
+}
+
+.About_main_page h1 {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+}
+
+.About_main_page h1::before {
+    width: 70%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: white;
+    bottom: -5px;
+}
+
+@media (max-width:991px) {
+
+
+    .About_main_page {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: auto;
+        z-index: 1;
+        height: 70vh;
+        background: url("/images/aboutBack.jpg") fixed no-repeat center / cover;
+    }
+}
+
+@media (max-width:576px) {
+    .About_main_page {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: auto;
+        z-index: 1;
+        height: 40vh;
+        background: url("/images/aboutBack.jpg") fixed no-repeat center / cover;
+    }
+}

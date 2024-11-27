@@ -1,0 +1,189 @@
+:root {
+    --golden: #b68c5a;
+    --blue: #023a5bab;
+    --lightBlack: rgba(0, 0, 0, 0.676);
+    --navyBlue: #023A5B
+}
+
+.nav-link {
+    text-transform: uppercase;
+    /* color: black; */
+    font-weight: 400;
+}
+
+.active {
+    color: var(--navyBlue) !important;
+    font-weight: 600;
+}
+
+
+.nav-link:hover {
+    color: var(--blue) !important;
+}
+
+@media (min-width:992px) {
+    .navbar {
+        position: absolute;
+        z-index: 999 !important;
+        background-color: rgb(255, 255, 255);
+        /* background-color: rgba(0, 255, 255, 0.381); */
+        width: 80%;
+        left: 50%;
+        top: 8%;
+        border-radius: 1rem;
+        transform: translateX(-50%);
+    }
+
+    .container-fluid {
+        /* background-color: rgba(95, 63, 24, 0.751); */
+    }
+
+
+    .container-fluid>#navbarSupportedContent {
+        /* border: 5px dotted dodgerblue; */
+        max-width: 80% !important;
+        display: flex !important;
+
+    }
+
+    .HelpDiv {
+        /* background-color: khaki; */
+        /* width: 100%; */
+        display: flex;
+        gap: 1vw;
+        align-items: center;
+
+        /* right: -35%; */
+    }
+
+    .HelpDivChild>p {
+        /* border: 1px solid white; */
+        text-align: center;
+        margin: 0;
+        /* color: #B68C5A; */
+        color: var(--golden);
+    }
+
+    .HelpDivChild>p>span {
+        color: var(--blue);
+        font-weight: 700;
+
+    }
+
+    .material-symbols-outlined {
+        color: #B68C5A;
+        border-radius: 0.3rem;
+        max-height: fit-content;
+        font-weight: lighter !important;
+        padding: 0.3rem !important;
+        font-size: 1.5rem !important;
+        border: 1px solid #B68C5A;
+    }
+
+    .navbar-nav {
+        /* background-color: rgba(255, 0, 0, 0.445); */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .un-list {
+        /* border: 1px solid black; */
+        display: flex;
+    }
+}
+
+@media(max-width:991px) {
+    .fixed {
+        position: fixed;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.947);
+        /* background-color: rgba(0, 255, 255, 0.381); */
+        width: 80%;
+        left: 50%;
+        top: 3%;
+        border-radius: 1rem;
+        border-bottom: 2px solid white;
+        transform: translateX(-50%);
+    }
+
+    .container-fluid>#navbarSupportedContent {
+        width: 100% !important;
+        /* background-color: aqua; */
+    }
+
+    .material-symbols-outlined {
+        color: #B68C5A;
+        border-radius: 0.3rem;
+        max-height: fit-content;
+        font-weight: lighter !important;
+        padding: 0.3rem !important;
+        font-size: 1.5rem !important;
+        border: 1px solid #B68C5A;
+    }
+
+    .HelpDiv {
+        /* background-color: khaki; */
+        width: fit-content;
+        display: flex;
+        gap: 2vw;
+        margin-top: 3vw;
+        /* align-items: center; */
+        /* display: block; */
+        /* display: none; */
+    }
+
+    .navbar-nav {
+        /* background-color: rgba(255, 0, 0, 0.445); */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: space-between;
+    }
+
+    .HelpDivChild>p {
+        /* border: 1px solid white; */
+        text-align: center;
+        margin: 0;
+        /* color: #B68C5A; */
+        color: var(--golden);
+    }
+
+    .HelpDivChild>p>span {
+        color: var(--blue);
+        font-weight: 700;
+
+    }
+
+
+}
+
+@media(max-width:600px) {
+    .fixed {
+        position: fixed;
+        z-index: 999;
+        border-bottom: 3px solid var(--lightBlack);
+        background-color: rgba(255, 255, 255, 0.961);
+        /* background-color: rgba(0, 255, 255, 0.381); */
+        width: 95%;
+        left: 50%;
+        top: 1%;
+        border-radius: 1rem;
+        transform: translateX(-50%);
+    }
+
+    .HelpDiv {
+        /* background-color: khaki; */
+        width: fit-content;
+        display: flex;
+        gap: 3vw;
+        margin-top: 3vw;
+        align-items: end;
+        /* display: block; */
+        /* display: none; */
+    }
+
+
+}
